@@ -1,0 +1,7 @@
+<ul>
+<% @kittens.each_with_index do |k, i| %>
+  <li>
+    <%= link_to(k[:name], kitten_path(i)) %>
+  </li>
+<% end %>
+</ul>
